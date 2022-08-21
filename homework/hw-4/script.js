@@ -1,12 +1,16 @@
 let wordOne,
     wordTwo,
     wordThree,
+    userAgree,
     hasNumber = true,
     register,
     registerCorrect = false;
 
 const numberRegex = /\d/;
 
+userAgree = confirm(`Tell me three most important words 💚`);
+
+if (userAgree == true) {
 do {
 
     wordOne = prompt(`input word one:`);
@@ -117,3 +121,4 @@ registerCorrect = false;
 console.log(`word three: `, wordThree);
 console.log(`YOUR STRING: ${wordOne} ${wordTwo} ${wordThree}!`);
 console.log(`~~~`);
+}
